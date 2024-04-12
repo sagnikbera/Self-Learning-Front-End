@@ -1,0 +1,131 @@
+@font-face{
+    font-family: Gilroy;
+    src: url(Fonts/Gilroy-ExtraBold.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+#nav{
+    height: 100px;
+    width: 100%;
+    /* child */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
+#nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav h3{
+    font-size: 16px;
+    font-weight: 500;
+    border: 1.5px solid black;
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+
+#nav i{
+    border: 1.5px solid black;
+    padding: 4px 8px;
+    border-radius: 30px;
+}
+
+#nav h1{
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+#nav button{
+    padding: 7px 12px;
+    border: 1.5px solid black;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+#btn2{
+    background-color: rgb(234, 69, 9);
+    color: white;
+    border: none;
+}
+
+#main>h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 130px;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+}
+
+img{
+    height: 450px;
+    width: 350px;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+}
+
+#img4{
+    transform: translate(-50%,-50%) rotate(7deg);
+}
+
+#img3{
+    transform: translate(-50%,-50%) rotate(14deg);
+}
+
+#img2{
+    transform: translate(-50%,-50%) rotate(21deg);
+}
+
+#img1{
+    transform: translate(-50%,-50%) rotate(28deg);
+}
+
+#btm-left{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-size: 16px;
+}
+
+.logos{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-size: 24px;    
+}
+
+.ri-youtube-line{
+    font-size: 27px;
+}

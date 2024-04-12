@@ -1,0 +1,145 @@
+
+@font-face {
+    font-family: Gilroy;
+    src: url(Fonts/Gilroy-ExtraBold.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+#nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+
+#nav-part1{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav-part2{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav h2,h3,h4{
+    font-size: 20px;
+}
+
+#content{
+    padding: 40px 50px;
+    margin-top: 100px;
+}
+
+#content h3{
+    font-size: 40px;
+}
+
+#content h1{
+    font-size: 130px;
+    letter-spacing: -3px;
+    line-height: 150px;
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+#case{
+    padding: 40px 64px;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#case h4,h5{
+    font-size: 26px;
+}
+
+#right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#line{
+    height: 2px;
+    width: 160px;
+    background-color: black;
+}
+
+#projects{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 65px;
+    gap: 90px;
+    height: 600px;
+}
+
+.elem{
+    width: 50%;
+}
+
+.elem-img{
+    height: 700px;
+    width: 100%;
+    background-color: rgb(191, 210, 216);
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+}
+
+#img1{
+    background-image: url(Img/Model4.jpg);
+}
+
+#img2{
+    background-image: url(Img/Model2.jpg);
+}
+
+.buttom{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttom h2{
+    font-size: 40px;
+}
+
+.buttom h4{
+    color: rgb(73, 69, 69);
+}
+
+.buttom i{
+    font-size: 25px;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+
+.buttom i:hover{
+    background-color: black;
+    color: white;
+    font-weight: 600px;
+}
