@@ -1,0 +1,361 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(Fonts/Gilroy-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('Fonts/WorkSans-VariableFont_wght.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 0px 90px;
+    padding-top: 150px;
+    gap: 70px;
+    /* background-color: red; */
+}
+
+/* ------------------------------ */
+
+
+#left{
+    height: 100%;
+    width:45%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+#left h1{
+    /* font-size: 120px; */
+    font-size: 8.6vw;
+    font-family: 'Work Sans';
+    font-weight: 500;
+    /* line-height: 130px; */
+    line-height: 9vw;
+}
+
+#bottom-left{
+    height: 40%;
+    width: 100%;
+    /* background-color: yellow; */
+}
+
+#color{
+    /* background-color: green; */
+    width: fit-content;
+    padding: 7px 10px;
+    display: flex;
+    border: 1.2px solid black;
+    border-radius: 20px;
+}
+
+#color h4{
+    padding-right: 15px;
+}
+
+#color1{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: burlywood;
+    margin-right: 3px;
+}
+
+#color2{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: brown;
+}
+
+#left h2{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    /* font-size: 30px; */
+    font-size: 2vw;
+}
+
+#left p{
+    /* font-size: 17px; */
+    font-size: 1vw;
+    width: 70%;
+    color: #333;
+    /* line-height: 25px; */
+    line-height: 1.2vw;
+}
+
+/* -------------------------------- */
+
+#right{
+    height: 90%;
+    width:32%;
+    position: relative;
+    /* background-color: blue; */
+}
+
+#right-top{
+    height: 70px;
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#right-top h4{
+    font-size: 20px;
+    font-family: 'Work Sans';
+}
+
+#right-top h5{
+    font-size: 15px;
+    font-family: 'Work Sans';
+    padding-right: 20px;
+}
+
+#right-top h5 i{
+    color: goldenrod;
+}
+
+#right img{
+    width: 100%;
+    height: 88.5%;
+    object-fit: cover;
+}
+
+
+#black-circle{
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    background-color: rgb(3, 3,7);
+    border-radius: 50%;
+    right: -18%;
+    top: 2   4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 20%;
+}
+
+#black-circle h5{
+    color: rgb(187, 183, 183);
+    font-size: 28px;
+    font-weight: 500;
+
+}
+
+#rotated{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    rotate: -90deg;
+    transform-origin: 0 0;
+    left: -10%;
+    bottom: 8%;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: 'Work Sans';
+}
+
+
+/* ----------------------------------------- */
+/* _____ Responsive _________ */
+/* ----------------------------------------- */
+
+@media (max-width:600px) {
+    #main{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 30px;
+        padding-top: 50px;
+        gap: 70px;
+        /* background-color: red; */
+    }
+
+
+    /* -----------------LEFT=TOP--------------- */
+
+
+
+    #left{
+        height: fit-content ;
+        width:100%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 50px;
+    }
+    
+    #left h1{
+        /* font-size: 120px; */
+        font-size: 15.6vw;
+        font-family: 'Work Sans';
+        font-weight: 500;
+        /* line-height: 130px; */
+        line-height: 15vw;
+    }
+    
+    #bottom-left{
+        height: 40%;
+        width: 100%;
+        /* background-color: yellow; */
+    }
+    
+    #color{
+        /* background-color: green; */
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        margin-top: 1.6vh;
+        padding: 3px 6px;
+        display: flex;
+        border: 1.2px solid black;
+        border-radius: 20px;
+    }
+    
+    #color h4{
+        padding-right: 5px;
+        font-size: 2.3vw;
+        /* background-color: red; */
+    }
+    
+    #color1{
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: burlywood;
+        margin-right: 3px;
+    }
+    
+    #color2{
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: brown;
+    }
+    
+    #left h2{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        /* font-size: 30px; */
+        font-size: 2.5vw;
+        /* background-color: green; */
+    }
+    
+    #left p{
+        /* font-size: 17px; */
+        font-size: 2vw;
+        width: 85%;
+        color: #333;
+        /* line-height: 25px; */
+        line-height: 2vw;
+    }
+
+
+    /* -----------------RIGHT=BOTTOM--------------- */
+
+    #right{
+        height: 80%;
+        width:90%;
+        position: relative;
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    #right-top{
+        height: 70px;
+        width: 100%;
+        /* background-color: green; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 0px;
+    }
+    
+    #right-top h4{
+        font-size: 20px;
+        font-family: 'Work Sans';
+    }
+    
+    #right-top h5{
+        font-size: 15px;
+        font-family: 'Work Sans';
+        padding-right: 20px;
+    }
+    
+    #right-top h5 i{
+        color: goldenrod;
+    }
+    
+    #right img{
+        width: 100%;
+        height: 88.5%;
+        object-fit: cover;
+    }
+    
+    
+    #black-circle{
+        position: absolute;
+        height: 120px;
+        width: 120px;
+        background-color: rgb(3, 3,7);
+        border-radius: 50%;
+        right: -14%;
+        top: 2   4%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 20%;
+    }
+    
+    #black-circle h5{
+        color: rgb(187, 183, 183);
+        font-size: 18px;
+        font-weight: 500;
+    
+    }
+    
+    #rotated{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: #fff;
+        rotate: -90deg;
+        transform-origin: 0 0;
+        left: -7%;
+        bottom: 8%;
+        font-size: 4vw;
+        font-weight: 500;
+        font-family: 'Work Sans';
+    }
+
+}
