@@ -1,0 +1,189 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(Fonts/Gilroy-ExtraBold.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+#nav{
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 4vw;
+    /* background-color: green; */
+}
+
+#nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2vw;
+}
+
+.gola{
+    height: 1.5vh;
+    width: 1.5vh;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+#nav-part2 h4{
+    font-size: 2vh; 
+}
+
+#nav-part2 h4 span{
+    color: rgb(112, 111, 111);
+    margin-left: 1.5vw;
+}
+
+#nav2{
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 3.5vw;
+    gap: 5.5vw;
+    /* background-color: green; */
+}
+
+#nav2 h3{
+    font-size: 2.5vh; 
+}
+
+#content{
+    height: calc(100% - 16vh);
+    /* background-color: red; */
+}
+
+#text-content{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    /* background-color: burlywood; */
+}
+
+#text-content::-webkit-scrollbar{
+    background-color: transparent;
+    height: 0.8vh;
+}
+
+#text-content::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 90, 31);
+}
+
+.elem{
+    height: 100%;
+    width: 50%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: green; */
+}
+
+.elem h1{
+    font-size: 5vw;
+}
+
+#image-content{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+
+#image-content::-webkit-scrollbar{
+    background-color: transparent;
+    height: 0.3vh;
+}
+
+#image-content::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 90, 31);
+}
+
+#image-content img{
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+#nav h5{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* //-------------------RESPONSIVE--------------------// */
+
+@media (max-width:600px){
+
+
+    #nav2 h3{
+        font-size: 1.8vh
+    }
+
+    #nav-part2 h4{
+        font-size: 1.5vh;
+    }
+
+    #nav2{
+        gap: 2.5vw;
+        margin-left: 1.5vw;
+    }
+    .elem h1{
+        font-size: 8vw;
+    }
+
+    #nav h5{
+        display: initial ;
+    }
+
+    #nav h5 i{
+        font-size: 4vw;
+    }
+
+    #nav-part2 h4{
+        display: none;
+    }
+
+    #nav-part2 h4:nth-child(1){
+        display: initial;
+    }
+
+
+}
+
