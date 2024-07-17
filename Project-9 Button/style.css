@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: black;
+    padding: 5vw;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 20px;
+    font: 600;
+    background-color: transparent;
+    border: 2px solid cyan;
+    color: cyan;
+    position: relative; /* X1 */
+    overflow: hidden;
+}
+
+button:hover{
+    transition: all linear 0.5s;
+}
+
+/* Animation 1 */
+
+
+#btn1::after{
+    content: "";
+    height: 100%;
+    width: 0%; /*initialy */
+    background-color: cyan;
+    position: absolute; /* X1 */
+    left: 0;
+    top: 0;
+    /* left 0 top 0 for make the bgc box in the button portion, absolutly overlapping condition */
+    transition: all linear 0.5s;
+    z-index: -1; /* to apear the text under the button text */
+}
+
+#btn1:hover::after{
+    width: 100%;
+}
+
+#btn1:hover{
+    color: black;
+}
+
+/* Animation 2 */
+
+#btn3::after{
+    content: "";
+    height: 60px;
+    width: 60px;
+    border-radius: 50%; 
+    background-color: cyan;
+    position: absolute;
+
+    /* set it center */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)scale(0);
+
+    transition: all linear 0.5s;
+    z-index: -1; 
+}
+
+#btn3:hover::after{
+    transform: translate(-50%, -50%)scale(3);
+    /* make <button> overflow:hidden */
+}
+
+#btn3:hover{
+    color: black;
+}
